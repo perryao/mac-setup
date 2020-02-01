@@ -17,6 +17,18 @@ cask 'firefox'
 cask 'firefox-developer-edition'
 
 ##
+# Editors
+#
+# We typically use command line editors (vim, emacs, etc.)
+# and sometimes use GUI editors (atom, sublime, etc.)
+##
+# Vim editor
+brew 'vim'
+
+# Neovim
+brew 'neovim'
+
+##
 # Platforms
 ##
 
