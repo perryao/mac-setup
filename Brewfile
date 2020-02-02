@@ -56,3 +56,9 @@ brew 'terraform'
 
 # Ansible is a simple way to automate apps and IT infrastructure.
 brew 'ansible'
+
+# Jsonnet is a DSL for json
+brew 'jsonnet'
+
+# Node version manager
+brew 'n'
