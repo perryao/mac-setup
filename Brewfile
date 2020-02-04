@@ -81,3 +81,5 @@ brew 'n'
 
 # FZF is a command line fuzzy finder
 brew 'fzf'
+
+brew 'corkscrew'
