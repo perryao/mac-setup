@@ -17,6 +17,20 @@ cask 'firefox'
 cask 'firefox-developer-edition'
 
 ##
+# Terminals
+##
+brew 'tmux'
+
+##
+# Shells
+#
+##
+brew 'zsh'
+brew 'z'
+brew 'zsh-syntax-highlighting'
+brew 'zsh-autosuggestions'
+
+##
 # Editors
 #
 # We typically use command line editors (vim, emacs, etc.)
@@ -57,8 +71,13 @@ brew 'terraform'
 # Ansible is a simple way to automate apps and IT infrastructure.
 brew 'ansible'
 
+brew 'stow'
+
 # Jsonnet is a DSL for json
 brew 'jsonnet'
 
 # Node version manager
 brew 'n'
+
+# FZF is a command line fuzzy finder
+brew 'fzf'
