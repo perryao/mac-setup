@@ -1,5 +1,7 @@
 # Overview
 
+Brewfile inspired by [joelparkerhenderson/brewfile](https://github.com/joelparkerhenderson/brewfile)
+
 # Usage
 
 1. Install Homebrew
