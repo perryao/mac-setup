@@ -1,0 +1,14 @@
+- name: login to pivnet
+  command: pivnet login --api-token='{{ pivnet_api_token }}'
+  environment:
+    https_proxy: localhost:3128
+- name: install pks cli
+  command: pivnet download-product-files --product-slug='pivotal-container-service' --release-version='{{ pks_version }}' --product-file-id=579530 -d /tmp
+  environment:
+    https_proxy: localhost:3128
+- name: move pks cli
+  copy:
+    remote_src: yes
+    src: /tmp/pks-darwin-amd64-{{ pks_version}}-build.20
+    dest: /usr/local/bin/pks
+    mode: 0755
