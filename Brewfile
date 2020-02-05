@@ -91,6 +91,8 @@ brew 'fzf'
 brew 'corkscrew'
 brew 'gettext' # envsubst, etc
 
+cask 'amethyst'
+
 ###########################################################################
 #
 # FONTS
