@@ -13,3 +13,8 @@
 ```
 brew bundle
 ```
+
+3. Run ansible playbook
+```
+sudo ansible-playbook -i localhost playbook.yml --extra-vars="@secrets.yml"
+```
