@@ -93,6 +93,26 @@ brew 'gettext' # envsubst, etc
 
 cask 'amethyst'
 
+##
+# Server-Related
+##
+
+# Docker software containers to help distribute applications.
+brew 'docker'
+brew 'boot2docker'
+
+# Compose is a tool for defining and running multi-container Docker applications.
+brew 'docker-compose'
+
+# Docker Machine installs Docker Engine on virtual hosts, and manages the hosts.
+brew 'docker-machine'
+
+
+## Containeriztion
+
+# Docker assembles applications from components.
+cask 'docker'
+
 ###########################################################################
 #
 # FONTS
