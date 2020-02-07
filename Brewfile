@@ -33,6 +33,12 @@ brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
 
 ##
+# Planning
+#
+##
+cask 'notion'
+
+##
 # Editors
 #
 # We typically use command line editors (vim, emacs, etc.)
