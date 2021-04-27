@@ -4,19 +4,14 @@ Brewfile inspired by [joelparkerhenderson/brewfile](https://github.com/joelparke
 
 # Usage
 
-1. Install Homebrew
-
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+./setup
 ```
 
-2. Run homebrew bundler
+# TODO
 
-```
-brew bundle
-```
-
-3. Run ansible playbook
-```
-sudo ansible-playbook -i localhost playbook.yml --extra-vars="@secrets.yml"
-```
+- [x] install vscode extensions
+- [x] manage ~/.gitconfig, ~/.gitconfig-work, and ~/.gitconfig-personal
+- [x] stow dotfiles
+- [x] Write vscode config
+- [ ] publish setup script to mikeperry.io/mac/setup

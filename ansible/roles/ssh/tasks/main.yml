@@ -1,0 +1,15 @@
+---
+- name: Generate SSH Key
+  community.crypto.openssh_keypair:
+    path: ~/.ssh/id_rsa
+    type: '{{ user.ssh.alg }}'
+    comment: '{{ user.email }}'
+  register: ssh_key
+  when: user.email is defined
+- name: Authorize key with GitHub
+  local_action:
+    module: github_key
+    name: '{{ansible_hostname}}'
+    token: '{{ github_access_token }}'
+    pubkey: '{{ ssh_key.public_key }}'
+  when: user.email is defined and github_access_token is defined

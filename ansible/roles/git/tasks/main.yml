@@ -1,0 +1,14 @@
+---
+- name: set default email
+  community.general.git_config:
+    name: 'user.email'
+    value: '{{ user.email }}'
+  when: user.email is defined
+- name: create user gitconfigs
+  community.general.git_config:
+    name: 'user.email'
+    scope: file
+    value: '{{ user.git.configs[item].email }}'
+    file: ~/.gitconfig-{{ item }}
+  loop: '{{ user.git.configs.keys() }}'
+  when: user.git.configs is defined

@@ -1,0 +1,24 @@
+---
+- name: list extensions
+  command: code --list-extensions
+  tags:
+    - vscode
+  register: ls
+- name: debug
+  debug:
+    msg: "{{ ls.stdout_lines }}"
+  tags:
+    - vscode
+- name: install extensions
+  # TODO: figure out why argv is the only way I can get code to respect proxy settings
+  command: code --install-extension {{ item }}
+  loop: "{{ vscode.extensions }}"
+  register: install
+  tags:
+    - vscode
+- name: debug install
+  debug:
+    msg: "{{ item.stdout }}"
+  with_items: '{{ install.results }}'
+  tags:
+    - vscode
