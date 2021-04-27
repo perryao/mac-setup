@@ -1,5 +1,10 @@
 ---
-- hosts: localhost
-  become: yes
+- hosts: all
+  vars_files:
+    - default.config.yml
   roles:
-    - { role: pivotal, tags: ['pivotal'] }
+    - { role: dotfiles, tags: ['dotfiles'] }
+    - { role: ssh, tags: ['ssh'] }
+    - { role: git, tags: ['git'] }
+    - { role: editors, tags: ['editors'] }
+  tasks: []

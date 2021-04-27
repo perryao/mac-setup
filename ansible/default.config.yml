@@ -1,0 +1,47 @@
+dotfiles_repo: https://github.com/perryao/dotfiles.git
+dotfiles_repo_version: master
+dotfiles_repo_local_destination: "~/code/personal/github.com/perryao/dotfiles"
+dotfiles_home: "~"
+dotfiles_files: []
+dotfiles_stow_packages:
+  - git
+  - zsh
+  - tmux
+dotfiles_symlinks:
+  - src: config/.config/Code/User/settings.json
+    dest: "~/Library/Application Support/Code/User/settings.json"
+  - src: config/.config/Code/User/keybindings.json
+    dest: "~/Library/Application Support/Code/User/keybindings.json"
+user:
+  ssh:
+    alg: ed25519
+
+vscode:
+  extensions:
+    - vscodevim.vim
+    - esbenp.prettier-vscode
+    - coenraads.bracket-pair-colorizer-2
+    - formulahendry.auto-rename-tag
+    - formulahendry.auto-close-tag
+    - christian-kohler.path-intellisense
+    - eamodio.gitlens
+    - aaron-bond.better-comments
+    - visualstudioexptteam.vscodeintellicode
+    - ms-azuretools.vscode-docker
+    - scalameta.metals
+    - ms-python.python
+    - redhat.java
+    - ms-vscode.cpptools
+    - golang.go
+    - eg2.vscode-npm-script
+    - editorconfig.editorconfig
+    - ms-vsliveshare.vsliveshare
+    - dsznajder.es7-react-js-snippets
+    - redhat.vscode-yaml
+    - ms-vscode.powershell
+    - davidanson.vscode-markdownlint
+    - rebornix.ruby
+    - wholroyd.jinja
+    - alefragnani.project-manager
+    - rust-lang.rust
+    - hashicorp.terraform

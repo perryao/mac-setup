@@ -1,0 +1,28 @@
+---
+- import_role:
+    name: geerlingguy.dotfiles
+
+- name: stow
+  command: stow -t ~ {{ item }}
+  args:
+    chdir: '{{ dotfiles_repo_local_destination }}'
+  loop:  '{{ dotfiles_stow_packages }}'
+  register: stow
+  tags:
+    - stow
+- name: debug stow
+  debug:
+    msg: "{{ item.stdout }}"
+  loop: '{{ stow.results }}'
+  tags:
+    - stow
+
+- name: link files
+  ansible.builtin.file:
+    src: '{{ dotfiles_repo_local_destination }}/{{ item.src }}'
+    dest: '{{ item.dest }}'
+    state: link
+    force: yes
+  loop: '{{ dotfiles_symlinks }}'
+  tags:
+    - symlinks

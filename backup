@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+rsync --archive \
+      --progress \
+      --human-readable \
+      --exclude node_modules \
+      --exclude .DS_Store \
+      --exclude .terraform \
+      --exclude packer_cache \
+      --exclude output-vagrant \
+      ~/code \
+      ~/Desktop \
+      ~/Documents \
+      $1
