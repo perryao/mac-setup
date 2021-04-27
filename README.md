@@ -20,4 +20,4 @@ curl -Ls https://mikeperry.io/mac/setup | bash
 - [x] manage ~/.gitconfig, ~/.gitconfig-work, and ~/.gitconfig-personal
 - [x] stow dotfiles
 - [x] Write vscode config
-- [ ] publish setup script to mikeperry.io/mac/setup
+- [x] publish setup script to mikeperry.io/mac/setup
