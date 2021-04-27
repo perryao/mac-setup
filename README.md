@@ -4,8 +4,14 @@ Brewfile inspired by [joelparkerhenderson/brewfile](https://github.com/joelparke
 
 # Usage
 
-```
+```shell
 ./setup
+```
+
+or
+
+```shell
+curl -Ls https://mikeperry.io/mac/setup | bash
 ```
 
 # TODO
