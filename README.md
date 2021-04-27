@@ -2,7 +2,7 @@
 
 Brewfile inspired by [joelparkerhenderson/brewfile](https://github.com/joelparkerhenderson/brewfile)
 
-# Usage
+## Usage
 
 ```shell
 ./setup
@@ -14,7 +14,7 @@ or
 curl -Ls https://mikeperry.io/mac/setup | bash
 ```
 
-# TODO
+## TODO
 
 - [x] install vscode extensions
 - [x] manage ~/.gitconfig, ~/.gitconfig-work, and ~/.gitconfig-personal
