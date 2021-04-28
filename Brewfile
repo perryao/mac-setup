@@ -26,7 +26,7 @@ cask 'google-chrome'
 # Terminals
 ##
 brew 'tmux'
-
+cask 'iterm2'
 ##
 # Shells
 #
@@ -70,6 +70,7 @@ cask 'intellij-idea'
 # Azure by Microsoft
 brew 'azure-cli'
 brew 'awscli'
+brew 'gimme-aws-creds'
 cask 'google-cloud-sdk'
 
 ## Virtual machines
@@ -83,7 +84,7 @@ cask 'virtualbox'
 # Vagrant lightweight, reproducible, portable development environments
 cask 'vagrant'
 cask 'vagrant-manager'
-
+cask 'parallels'
 ## Provisioning
 
 # Terraform common configuration to launch infrastructure.
@@ -94,9 +95,12 @@ brew 'terragrunt'
 brew 'conftest'
 
 brew 'kubectl'
+brew 'octant'
 brew 'helm'
 
 brew 'minikube'
+
+brew 'stern'
 
 ## Configuration management
 
