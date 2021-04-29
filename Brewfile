@@ -129,6 +129,9 @@ cask 'dotnet-sdk'
 brew 'pipenv'
 
 brew 'maven'
+
+brew 'scalaenv'
+brew 'sbtenv'
 # FZF is a command line fuzzy finder
 brew 'fzf'
 brew 'jq'
