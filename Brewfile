@@ -7,6 +7,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'superbrothers/zsh-kubectl-prompt'
+tap 'argoproj/tap'
 
 
 ##
@@ -88,15 +89,16 @@ cask 'parallels'
 ## Provisioning
 
 # Terraform common configuration to launch infrastructure.
-brew 'terraform'
+brew 'tfenv'
+brew 'tgenv'
 brew 'terraform-docs'
-brew 'terragrunt'
 
 brew 'conftest'
 
 brew 'kubectl'
 brew 'octant'
 brew 'helm'
+brew 'argocd'
 
 brew 'minikube'
 
@@ -160,6 +162,8 @@ cask 'docker'
 
 ## Security
 cask '1password'
+brew 'gpg'
+brew 'sops'
 
 ###########################################################################
 #
