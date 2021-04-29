@@ -3,6 +3,7 @@
   community.general.git_config:
     name: 'user.email'
     value: '{{ user.email }}'
+    scope: global
   when: user.email is defined
 - name: create user gitconfigs
   community.general.git_config:
