@@ -1,0 +1,7 @@
+---
+- name: "golang | Run get commands"
+  shell: "/usr/local/bin/go get -u {{ item }}"
+  with_items: "{{ go_get }}"
+  changed_when: false
+  tags:
+    - go_get

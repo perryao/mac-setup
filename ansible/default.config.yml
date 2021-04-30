@@ -45,3 +45,6 @@ vscode:
     - alefragnani.project-manager
     - rust-lang.rust
     - hashicorp.terraform
+
+go_get:
+  - golang.org/x/tools/gopls
