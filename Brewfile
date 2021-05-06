@@ -23,6 +23,8 @@ cask 'firefox-developer-edition'
 
 cask 'google-chrome'
 
+cask 'spotify'
+
 ##
 # Terminals
 ##
@@ -94,6 +96,7 @@ brew 'tgenv'
 brew 'terraform-docs'
 
 brew 'conftest'
+brew 'opa'
 
 brew 'kubectl'
 brew 'octant'
@@ -103,6 +106,8 @@ brew 'argocd'
 brew 'minikube'
 
 brew 'stern'
+
+brew 'act' # https://github.com/nektos/act
 
 ## Configuration management
 
@@ -135,6 +140,7 @@ brew 'sbtenv'
 # FZF is a command line fuzzy finder
 brew 'fzf'
 brew 'jq'
+brew 'yq'
 
 brew 'hugo'
 
@@ -162,6 +168,8 @@ brew 'docker-machine'
 
 # Docker assembles applications from components.
 cask 'docker'
+
+brew 'whalebrew'
 
 ## Security
 cask '1password'
