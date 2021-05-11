@@ -121,6 +121,7 @@ brew 'reattach-to-user-namespace'
 brew 'jsonnet'
 brew 'wget'
 
+brew 'gh'
 
 # Node version manager
 brew 'n'
@@ -156,9 +157,6 @@ brew 'gettext' # envsubst, etc
 # Docker software containers to help distribute applications.
 brew 'docker'
 brew 'boot2docker'
-
-# Compose is a tool for defining and running multi-container Docker applications.
-brew 'docker-compose'
 
 # Docker Machine installs Docker Engine on virtual hosts, and manages the hosts.
 brew 'docker-machine'
