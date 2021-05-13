@@ -116,6 +116,7 @@ brew 'ansible'
 
 brew 'stow'
 brew 'reattach-to-user-namespace'
+brew 'htop'
 
 # Jsonnet is a DSL for json
 brew 'jsonnet'
