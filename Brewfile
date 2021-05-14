@@ -106,6 +106,7 @@ brew 'argocd'
 brew 'minikube'
 
 brew 'stern'
+brew 'velero'
 
 brew 'act' # https://github.com/nektos/act
 
