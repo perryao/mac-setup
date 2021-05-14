@@ -8,6 +8,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'superbrothers/zsh-kubectl-prompt'
 tap 'argoproj/tap'
+tap 'minamijoyo/tfmigrate'
 
 
 ##
@@ -94,6 +95,7 @@ cask 'parallels'
 brew 'tfenv'
 brew 'tgenv'
 brew 'terraform-docs'
+brew 'tfmigrate'
 
 brew 'conftest'
 brew 'opa'
@@ -107,6 +109,7 @@ brew 'minikube'
 
 brew 'stern'
 brew 'velero'
+cask 'lens'
 
 brew 'act' # https://github.com/nektos/act
 
