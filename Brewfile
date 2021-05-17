@@ -27,6 +27,7 @@ cask 'google-chrome'
 
 cask 'spotify'
 
+cask 'postman'
 ##
 # Terminals
 ##
