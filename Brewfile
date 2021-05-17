@@ -9,6 +9,7 @@ tap 'homebrew/cask-versions'
 tap 'superbrothers/zsh-kubectl-prompt'
 tap 'argoproj/tap'
 tap 'minamijoyo/tfmigrate'
+tap 'chef/chef'
 
 
 ##
@@ -96,9 +97,12 @@ brew 'tfenv'
 brew 'tgenv'
 brew 'terraform-docs'
 brew 'tfmigrate'
+brew 'tflint'
+brew 'terrascan'
 
 brew 'conftest'
 brew 'opa'
+cask 'inspec'
 
 brew 'kubectl'
 brew 'octant'
