@@ -10,6 +10,7 @@ tap 'superbrothers/zsh-kubectl-prompt'
 tap 'argoproj/tap'
 tap 'minamijoyo/tfmigrate'
 tap 'chef/chef'
+tap 'fishtown-analytics/dbt'
 
 
 ##
@@ -101,6 +102,12 @@ brew 'tfmigrate'
 brew 'tflint'
 brew 'terrascan'
 
+brew 'pre-commit'
+brew 'gawk'
+brew 'tfsec'
+brew 'coreutils'
+brew 'checkov'
+
 brew 'conftest'
 brew 'opa'
 cask 'inspec'
@@ -183,6 +190,11 @@ brew 'whalebrew'
 cask '1password'
 brew 'gpg'
 brew 'sops'
+
+##
+# Data
+##
+brew 'dbt'
 
 ###########################################################################
 #
