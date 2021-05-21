@@ -11,6 +11,7 @@ tap 'argoproj/tap'
 tap 'minamijoyo/tfmigrate'
 tap 'chef/chef'
 tap 'fishtown-analytics/dbt'
+tap 'weaveworks/tap'
 
 
 ##
@@ -113,6 +114,7 @@ brew 'opa'
 cask 'inspec'
 
 brew 'kubectl'
+brew 'eksctl'
 brew 'octant'
 brew 'helm'
 brew 'argocd'
