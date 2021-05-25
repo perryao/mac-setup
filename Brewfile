@@ -151,8 +151,6 @@ brew 'go'
 
 cask 'dotnet-sdk'
 
-brew 'pipenv'
-
 brew 'maven'
 
 brew 'scalaenv'
