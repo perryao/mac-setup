@@ -155,6 +155,8 @@ brew 'maven'
 
 brew 'scalaenv'
 brew 'sbtenv'
+
+brew 'pyenv'
 # FZF is a command line fuzzy finder
 brew 'fzf'
 brew 'jq'
