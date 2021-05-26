@@ -157,6 +157,7 @@ brew 'scalaenv'
 brew 'sbtenv'
 
 brew 'pyenv'
+brew 'poetry'
 # FZF is a command line fuzzy finder
 brew 'fzf'
 brew 'jq'
