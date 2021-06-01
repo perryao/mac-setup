@@ -126,6 +126,7 @@ brew 'velero'
 cask 'lens'
 
 brew 'act' # https://github.com/nektos/act
+brew 'k6'
 
 ## Configuration management
 
@@ -186,6 +187,7 @@ brew 'docker-machine'
 
 # Docker assembles applications from components.
 cask 'docker'
+brew 'dive'
 
 brew 'whalebrew'
 
