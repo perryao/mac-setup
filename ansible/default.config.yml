@@ -46,6 +46,7 @@ vscode:
     - rust-lang.rust
     - hashicorp.terraform
     - timonwong.shellcheck
+    - GitHub.remotehub
 
 go_get:
   - golang.org/x/tools/gopls
