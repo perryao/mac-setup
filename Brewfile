@@ -12,6 +12,8 @@ tap 'minamijoyo/tfmigrate'
 tap 'chef/chef'
 tap 'fishtown-analytics/dbt'
 tap 'weaveworks/tap'
+tap 'derailed/k9s'
+tap 'aws/tap'
 
 
 ##
@@ -47,6 +49,7 @@ brew 'zsh-kubectl-prompt'
 
 cask 'powershell'
 
+cask 'keybase'
 ##
 # Planning
 #
@@ -78,6 +81,7 @@ cask 'intellij-idea'
 # Azure by Microsoft
 brew 'azure-cli'
 brew 'awscli'
+brew 'ec2-instance-selector'
 brew 'gimme-aws-creds'
 cask 'google-cloud-sdk'
 
@@ -116,6 +120,7 @@ cask 'inspec'
 brew 'kubectl'
 brew 'eksctl'
 brew 'octant'
+brew 'k9s'
 brew 'helm'
 brew 'argocd'
 
