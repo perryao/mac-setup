@@ -14,6 +14,7 @@ tap 'fishtown-analytics/dbt'
 tap 'weaveworks/tap'
 tap 'derailed/k9s'
 tap 'aws/tap'
+tap 'sqitchers/sqitch'
 
 
 ##
@@ -193,11 +194,13 @@ brew 'docker-machine'
 # Docker assembles applications from components.
 cask 'docker'
 brew 'dive'
+brew 'podman'
 
 brew 'whalebrew'
 
 ## Security
 cask '1password'
+cask '1password-cli'
 brew 'gpg'
 brew 'sops'
 
@@ -206,6 +209,10 @@ brew 'sops'
 ##
 brew 'dbt'
 cask 'dbeaver-community'
+brew 'cpanminus' # required for sqitch
+brew 'unixodbc'
+cask 'snowflake-snowsql'
+brew 'sqitch', args: ['with-postgres-support', 'with-sqlite-support', 'with-snowflake-support']
 
 ###########################################################################
 #
