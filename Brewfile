@@ -15,6 +15,7 @@ tap 'weaveworks/tap'
 tap 'derailed/k9s'
 tap 'aws/tap'
 tap 'sqitchers/sqitch'
+tap 'instrumenta/instrumenta'
 
 
 ##
@@ -33,6 +34,8 @@ cask 'google-chrome'
 cask 'spotify'
 
 cask 'postman'
+
+cask 'kindle'
 ##
 # Terminals
 ##
@@ -119,6 +122,7 @@ brew 'opa'
 cask 'inspec'
 
 brew 'kubectl'
+brew 'kubeval'
 brew 'eksctl'
 brew 'octant'
 brew 'k9s'
@@ -126,6 +130,7 @@ brew 'helm'
 brew 'argocd'
 
 brew 'minikube'
+brew 'kind'
 
 brew 'stern'
 brew 'velero'
