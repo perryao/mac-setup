@@ -167,6 +167,7 @@ brew 'maven'
 
 brew 'scalaenv'
 brew 'sbtenv'
+brew 'mill'
 
 brew 'pyenv'
 brew 'poetry'
