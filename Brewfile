@@ -189,16 +189,13 @@ brew 'gettext' # envsubst, etc
 
 # Docker software containers to help distribute applications.
 brew 'docker'
-brew 'boot2docker'
-
-# Docker Machine installs Docker Engine on virtual hosts, and manages the hosts.
-brew 'docker-machine'
+brew 'docker-compose'
+brew 'colima'
 
 
 ## Containeriztion
 
 # Docker assembles applications from components.
-cask 'docker'
 brew 'dive'
 brew 'podman'
 
