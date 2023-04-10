@@ -1,3 +1,14 @@
+def processor_architecture
+  host_arch = `uname -m`.strip
+  case host_arch
+  when /x86_64|amd64|i\d86/ # Intel or AMD
+    "Intel"
+  when /arm64|aarch64/ # ARM
+    "ARM"
+  else
+    "Unknown"
+  end
+end
 ##
 # Preflight
 ##
@@ -96,7 +107,11 @@ cask 'google-cloud-sdk'
 brew 'packer'
 
 # VirtualBox creates and configures portable development environments, by Oracle.
-cask 'virtualbox'
+if processor_architecture == "Intel"
+  cask 'virtualbox'
+elsif processor_architecture == "ARM"
+  cask 'virtualbox-beta'
+end
 
 # Vagrant lightweight, reproducible, portable development environments
 cask 'vagrant'
@@ -215,7 +230,8 @@ cask 'dbeaver-community'
 brew 'cpanminus' # required for sqitch
 brew 'unixodbc'
 cask 'snowflake-snowsql'
-brew 'sqitch', args: ['with-postgres-support', 'with-sqlite-support', 'with-snowflake-support']
+# disable sqitch until https://github.com/sqitchers/homebrew-sqitch/issues/56 is fixed
+# brew 'sqitch', args: ['with-postgres-support', 'with-sqlite-support', 'with-snowflake-support']
 
 ###########################################################################
 #
