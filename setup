@@ -12,7 +12,7 @@ install_or_upgrade_brew() {
   echo "Verifying homebrew is installed."
   if ! command -v brew >/dev/null 2>&1; then
     echo "installing homebrew"
-    bash <(curl -s https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   else
     echo "homebrew already installed. ensuring we're up-to-date"
     brew update
