@@ -23,12 +23,14 @@ tap 'instrumenta/instrumenta'
 ##
 
 # Firefox web browser
-cask 'firefox'
+cask 'firefox' unless File.directory?('/Applications/Firefox.app')
 
 # Firefox developer edition, which features programming tools.
-cask 'firefox-developer-edition'
+cask 'firefox-developer-edition' unless File.directory?('/Applications/Firefox Developer Edition.app')
 
-cask 'google-chrome'
+# Google Chrome web browser
+
+cask 'google-chrome' unless File.directory?('/Applications/Google Chrome')
 
 cask 'spotify'
 
@@ -57,10 +59,10 @@ cask 'keybase'
 # Planning
 #
 ##
-cask 'notion'
+cask 'notion' unless File.directory?('/Applications/Notion.app')
 
 ### Messaging
-cask 'slack'
+cask 'slack' unless File.directory?('/Applications/Slack.app')
 
 ##
 # Editors
