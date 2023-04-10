@@ -30,7 +30,7 @@ cask 'firefox-developer-edition' unless File.directory?('/Applications/Firefox D
 
 # Google Chrome web browser
 
-cask 'google-chrome' unless File.directory?('/Applications/Google Chrome')
+cask 'google-chrome' unless File.directory?('/Applications/Google Chrome.app')
 
 cask 'spotify'
 
