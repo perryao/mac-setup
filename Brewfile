@@ -10,7 +10,6 @@ tap 'superbrothers/zsh-kubectl-prompt'
 tap 'argoproj/tap'
 tap 'minamijoyo/tfmigrate'
 tap 'chef/chef'
-tap 'fishtown-analytics/dbt'
 tap 'weaveworks/tap'
 tap 'derailed/k9s'
 tap 'aws/tap'
@@ -210,7 +209,6 @@ brew 'sops'
 ##
 # Data
 ##
-brew 'dbt'
 cask 'dbeaver-community'
 brew 'cpanminus' # required for sqitch
 brew 'unixodbc'
