@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
+set -eo pipefail
+
 CODE_DIR="${HOME}/code"
 MAC_SETUP_REPO="https://github.com/perryao/mac-setup.git"
 MAC_SETUP_DIR="${CODE_DIR}/personal/github.com/perryao/mac-setup"
 
 echo "Starting machine setup"
 
-install_or_upgrade_brew () {
+install_or_upgrade_brew() {
   echo "Verifying homebrew is installed."
-  if ! command -v brew > /dev/null 2>&1; then
+  if ! command -v brew >/dev/null 2>&1; then
     echo "installing homebrew"
     bash <(curl -s https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
   else
@@ -40,7 +42,7 @@ brew_bundle() {
 ansible_playbook() {
   echo "Running ansible playbook"
   pushd "${MAC_SETUP_DIR}/ansible"
-  ansible-galaxy install -r requirements.yml 
+  ansible-galaxy install -r requirements.yml
   ansible-playbook playbook.yml -i inventory
   popd
 }
