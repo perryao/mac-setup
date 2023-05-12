@@ -20,7 +20,6 @@ vscode:
   extensions:
     - vscodevim.vim
     - esbenp.prettier-vscode
-    - coenraads.bracket-pair-colorizer-2
     - formulahendry.auto-rename-tag
     - formulahendry.auto-close-tag
     - christian-kohler.path-intellisense
