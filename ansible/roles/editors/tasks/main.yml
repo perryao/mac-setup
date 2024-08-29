@@ -1,2 +1,2 @@
 ---
-- include: vscode.yml
+- include_tasks: vscode.yml
