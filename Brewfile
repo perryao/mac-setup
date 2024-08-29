@@ -135,7 +135,7 @@ brew 'opa'
 cask 'inspec'
 
 brew 'kubectl'
-brew 'kubeval'
+brew 'kubeconform'
 brew 'eksctl'
 brew 'octant'
 brew 'k9s'
