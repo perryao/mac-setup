@@ -47,5 +47,5 @@ vscode:
     - timonwong.shellcheck
     - GitHub.remotehub
 
-go_get:
-  - golang.org/x/tools/gopls
+go_install:
+  - golang.org/x/tools/gopls@latest
