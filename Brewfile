@@ -14,9 +14,6 @@ end
 ##
 
 # Tap homebrew
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
 tap 'superbrothers/zsh-kubectl-prompt'
 tap 'argoproj/tap'
 tap 'minamijoyo/tfmigrate'
@@ -37,7 +34,7 @@ tap 'instrumenta/instrumenta'
 cask 'firefox' unless File.directory?('/Applications/Firefox.app')
 
 # Firefox developer edition, which features programming tools.
-cask 'firefox-developer-edition' unless File.directory?('/Applications/Firefox Developer Edition.app')
+cask 'firefox@developer-edition' unless File.directory?('/Applications/Firefox Developer Edition.app')
 
 # Google Chrome web browser
 
