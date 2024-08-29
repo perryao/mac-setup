@@ -31,7 +31,6 @@ clone_or_pull_setup_repo() {
     git clone --recurse-submodules "${MAC_SETUP_REPO}" "${MAC_SETUP_DIR}"
   else
     pushd "${MAC_SETUP_DIR}"
-    git remote set-url origin git@github.com:perryao/mac-setup.git
     git pull
     git submodule update --init --recursive
     popd
