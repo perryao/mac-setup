@@ -107,7 +107,7 @@ brew 'packer'
 if processor_architecture == "Intel"
   cask 'virtualbox'
 elsif processor_architecture == "ARM"
-  cask 'virtualbox-beta'
+  cask 'virtualbox@beta'
 end
 
 # Vagrant lightweight, reproducible, portable development environments
