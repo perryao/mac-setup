@@ -1,6 +1,10 @@
 ---
+- name: "golang | Find Go binary"
+  shell: "command -v go"
+  register: go_path
+
 - name: "golang | Run get commands"
-  shell: "/usr/local/bin/go get -u {{ item }}"
+  shell: "{{ go_path.stdout }} get -u {{ item }}"
   with_items: "{{ go_get }}"
   changed_when: false
   tags:
