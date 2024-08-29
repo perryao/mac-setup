@@ -3,9 +3,9 @@
   shell: "command -v go"
   register: go_path
 
-- name: "golang | Run get commands"
-  shell: "{{ go_path.stdout }} get -u {{ item }}"
-  with_items: "{{ go_get }}"
+- name: "golang | Run install commands"
+  shell: "{{ go_path.stdout }} install {{ item }}"
+  with_items: "{{ go_install }}"
   changed_when: false
   tags:
-    - go_get
+    - go_install
